@@ -1,0 +1,21 @@
+Usuários
+
+login (primary key)(varchar)
+senha (varchar)
+email (varchar
+nivel (varchar)
+foto (varchar)
+
+
+CREATE TABLE `usuarios` (
+  `login` varchar(30) NOT NULL,
+  `nome` varchar(60) NOT NULL,
+  `senha` varchar(30) NOT NULL,
+  `nivel` varchar(3) NOT NULL,
+  `foto` varchar(255) NOT NULL,
+  `email` varchar(100) NOT NULL
+)
+
+ALTER TABLE `usuarios`
+  ADD PRIMARY KEY (`login`);
+
