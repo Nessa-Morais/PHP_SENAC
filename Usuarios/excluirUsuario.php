@@ -1,38 +1,31 @@
 <?php
-
     include "../conexao.php";
 
-    //tratamento de erro
-    if(isset($_GET['loginUsuario'])){
-        //entrada
-        $loginUsuario = $_GET['loginUsuario'];
+    if(isset($_GET['login'])){
 
-        //processamento
-        $sql="delete from alunos where id = $loginUsuario";
+        $login = $_GET['login'];
+        
+        $sql = "delete from usuarios where login = '$login'";
         $excluir = mysqli_query($conexao,$sql);
 
-        //saida
+        //saida - feedback ao usuário
         if($excluir){
             echo "
                 <script>
-                    alert('Usuário excluído com Sucesso!');
+                    alert('Usuário exluido com Sucesso');
                     window.location = 'listarUsuario.php';
                 </script>
             ";
+            //header("location: listarAluno.php");
         }
         else{
             echo "
-                <p> Sistema temporariamente fora do ar. Tente novamente mais tarde. </p>
-                <p> Entre em contato com o administrador do Sistema. </p>
+                <p> Bando de Dados temporariamente fora do ar. Tente novamente mais tarde. </p>
+                <p> Entre em contato com o administrador do Site ... </p>
             ";
             echo mysqli_error($conexao);
         }
     }
-    else{
-        echo "
-            <p> Esta é uma página de tratamento de dados. </p>
-            <p> Clique <a href='listarUsuario.php'> aqui </a> para Excluir um usuário. </p>
-        ";
-    }
 
+    
 ?>
