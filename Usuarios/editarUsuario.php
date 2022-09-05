@@ -35,9 +35,6 @@
                     <div class="col text-start">
                         <a href="listarUsuario.php"> <button type="button" class="btn btn-warning btn-sm">VOLTAR</button> </a>
                     </div>
-                    <div class="col">
-                        <button type="editarSenha.php?login<?php echo $login; ?>" class="btn btn-danger btn-sm botao">ALTERAR SENHA</button></a>
-                    </div>
                     <div class="col text-end">
                         <button type="submit" class="btn btn-primary btn-sm botao">ALTERAR DADOS</button></a>
                     </div>

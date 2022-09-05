@@ -5,7 +5,7 @@
     if(isset($_POST['login'])){
         //entrada - coletar os dados do formulário
         $login = trim($_POST['login']);
-        $nome = trim($_POST['nome']);
+        $nome = trim($_POST['name']);
         $email = trim($_POST['email']);
         
 

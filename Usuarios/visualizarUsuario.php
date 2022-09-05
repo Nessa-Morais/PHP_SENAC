@@ -47,6 +47,9 @@
             <div class="col text-start">
                 <a href="listarUsuario.php"> <button type="button" class="btn btn-warning btn-sm">VOLTAR</button> </a>
             </div>
+            <div class="col">
+                <a href="editarSenha.php?login=<?php echo $login; ?>"><button type="button" class="btn btn-danger btn-sm botao">ALTERAR SENHA</button></a>
+            </div>
             <div class="col text-end">
                 <a href="editarUsuario.php?login=<?php echo $login ?>"><button type="button" class="btn btn-primary btn-sm botao">EDITAR DADOS</button></a>
             </div>
