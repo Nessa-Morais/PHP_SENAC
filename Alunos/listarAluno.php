@@ -1,6 +1,7 @@
 <?php
 include "../conexao.php";
 include "../controle.php";
+include "../seguranca.php";
 $sql = "select * from alunos order by nome";
 $seleciona = mysqli_query($conexao, $sql);
 ?>

@@ -1,5 +1,6 @@
 <?php
 include "controle.php";
+include "seguranca_adm.php";
 ?>
 <style>
     img{

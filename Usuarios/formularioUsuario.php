@@ -2,7 +2,7 @@
     include "../controle.php";
 ?>
         <div class="container bg-info pag">    
-            <h1>Cadastro de Alunos</h1>
+            <h1>Cadastro de Usuários</h1>
             <form name="form" method="post" action="incluirUsuario.php">
                 <div class="mb-3">
                     <label for="login" class="form-label">Login</label>

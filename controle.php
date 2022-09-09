@@ -15,8 +15,26 @@
             <div class="col text-start">
                 SENAC MADUREIRA
             </div>
-            <div class="col text-end">
-                LOGIN
+            <div class="col text-end link">
+               <?php
+               if(!isset($_SESSION)){
+                   session_start();
+               }
+               if(isset($_SESSION['login'])){
+                   $login= $_SESSION['login'];
+                   $nome= $_SESSION['nome'];
+                   $foto= $_SESSION['foto'];
+
+                   echo "Bem vindo, $nome | <a href= '\senac\logout.php'> Logout </a>";
+               }
+               else{
+                   echo"
+                   <a href= '\senac/login.php'> Login </a> |
+                   <a href= '\senac/usuarios/formularioUsuario.php'> Não possuo Cadastro </a>
+                   ";
+               }
+
+               ?>
             </div>
 
         </div>

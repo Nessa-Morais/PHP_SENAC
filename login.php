@@ -19,7 +19,7 @@ include "controle.php";
 
             <button type="submit" class="btn btn-primary">Ok</button>
             <p>
-                <a href="usuario/formularioUsuario.php">Não possuo Cadastro</a>
+                <a href="usuarios/formularioUsuario.php">Não possuo Cadastro</a>
             </p>
         </form>
         <div class="text-center text-danger">
